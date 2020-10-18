@@ -1,0 +1,145 @@
+$goldColor: #bfab8e
+$redColor: #d92525
+$blackColor: #000
+$whiteColor: #fff
+$small-bp:770px
+
+li 
+	list-style-type: none
+
+a 
+	text-decoration: none
+	white-space: nowrap
+
+ul
+	padding: 0
+
+@mixin flexbox
+	display: -webkit-box
+	display: -moz-box
+	display: -ms-flexbox
+	display: -webkit-flex
+	display: flex
+
+.top-nav
+	ul,
+.footer-nav
+	ul
+		height: auto
+		text-align: center
+
+.main-image
+	height: 300px
+	background: url(../images/background.jpg) top / cover no-repeat
+
+.text-black
+	color: $blackColor
+
+.title hr
+	border-top: 3px solid $blackColor
+	width: 30%
+
+.btn,
+.btn:hover,
+.text-gold 
+	color: $goldColor
+
+.btn
+	background-color: $blackColor
+	border-radius: 20px
+	margin: auto
+	padding: 1px 8px 4px 8px
+	&:hover 
+		color: $whiteColor
+
+.button 
+	@include flexbox
+	align-items: center
+
+.footer-nav	
+	ul
+		li
+			a 
+				color: $redColor
+
+
+.small-menu
+	nav
+	ul
+		margin: 20px auto
+		height: 20px
+		white-space: nowrap
+	li 
+		display: inline
+	a
+		font-size: small
+
+.booking
+	height: min-content
+
+
+%background-shared
+	background-color: $goldColor	
+
+%border-shared
+	border: 2px solid $goldColor
+form
+	@extend %background-shared
+	@extend %border-shared
+	width: 300px
+
+.form-title
+	@include flexbox
+	height: 50px
+	border-bottom: 3px solid $whiteColor
+
+input[type="text"],
+input[type="date"] 
+	@extend %background-shared
+	border: 2px solid $whiteColor
+	border-radius: 0
+	color: $whiteColor
+	width: 50%
+	margin: 15px auto
+
+input::placeholder
+	color: white !important
+	text-align: center
+
+form p
+	text-align: center
+	color: $goldColor
+	background-color: $whiteColor
+	margin: auto
+	width: 50%
+	border-radius: 30px
+	padding: 1px 2px 4px 2px
+
+.ad-mobile img,
+.ad-desktop img
+	max-width: 100%
+	
+.map-element
+	@extend %border-shared
+
+
+@media (min-width: $small-bp)
+	.top-nav ul,
+	.footer-nav ul
+		height: 50px
+		@include flexbox 
+		align-items: center
+		justify-content: center
+		li
+			float: left
+		a
+			margin: 10px
+	.small-menu 
+		nav
+			ul
+				li
+					a 
+						font-size: initial
+	.map-element 
+		width: 100%
+	

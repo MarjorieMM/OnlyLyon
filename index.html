@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+			integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="css/style.css" />
+		<title>OnlyLyon</title>
+	</head>
+	<body>
+		<!-- header avec la barre de navigation et la photo principale -->
+		<header>
+			<div class="container-fluid">
+				<div class="row p-4">
+					<div class="col-12 col-md-6 logo">
+						<img
+							src="./images/logo.png"
+							alt="logo_de_Lyon"
+							class="img-fluid mx-auto d-block mb-3"
+						/>
+					</div>
+					<nav class="top-nav col-12 col-md-6">
+						<ul class="m-0">
+							<li>
+								<a href="#" class="text-black"> MON COMPTE</a>
+							</li>
+							<li>
+								<a href="#" class="text-black">CHERCHER</a>
+							</li>
+							<li>
+								<a href="#" class="text-black">LANGUE</a>
+							</li>
+							<li>
+								<a href="#" class="text-black">PANIER</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="row main-image"></div>
+			</div>
+		</header>
+
+		<!-- Contenu principal -->
+		<main>
+			<!-- Petite barre de menu qui permet de retourner sur la page d'accueil -->
+
+			<div class="container">
+				<div class="small-menu row">
+					<nav class="col-12 small-nav">
+						<ul>
+							<li><a href="#" class="text-gold">Accueil /&nbsp;</a></li>
+							<li>
+								<a href="#" class="text-black">
+									Les traboules de la Croix Rousse</a
+								>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<!-- Titre principal qui disparait sur mobile -->
+				<div class="title d-none d-md-block text-center font-weight-bold">
+					<h1>LES TRABOULES DE LA CROIX ROUSSE ET L'ATELIER SOIERIE</h1>
+					<hr />
+				</div>
+				<!-- Texte principal et formaulaire de reservation de visite -->
+				<div class="row">
+					<div class="col-12 col-lg-6 main-text">
+						<strong
+							>Des traboules en escaliers, pénétrez dans le monde de la soie et
+							des techniques traditionnelles des canuts...</strong
+						>
+						<p>
+							Promenez-vous (ou plutôt "traboulez") et partez à la découverte du
+							quotidien des canuts de Lyon.
+						</p>
+						<p>
+							Du boulevard de la Croix-Rousse, empruntez les traboules, ces
+							fameux passages étroit, à la fois secrets et chargés de souvenirs,
+							qui permettent de descendre toute la colline en passant à travers
+							des cours insolites, comme celle des Voraces, ou d'autres passages
+							empruntés jadis par les canuts, tisseurs de soie, au 19ème siècle.
+							Ces "allées" vous racontent leur histoire.
+						</p>
+						<p>
+							En bas des pentes, l'Atelier de Soierie vous accueille pour vous
+							présenter un savoir-faire typiquement lyonnais : l'impression au
+							cadre et le peint main sur panne de velours soie. C'est la
+							dernière étape de la création du fameux carré de soie, celle de sa
+							mise en couleurs et en décoration. A l'issue de la présentation,
+							si vous le souhaitez, faites un tour de la boutique d'articles de
+							soie (foulards, écharpes, cravates) pour conserver le souvenir de
+							l'héritage artisanal lyonnais.
+						</p>
+						<p>
+							Une visite incontournable pour qui souhaite connaître les
+							traditions lyonnaises.
+						</p>
+					</div>
+					<div
+						class="booking col-12 col-lg-6 d-flex justify-content-center my-3 my-lg-0"
+					>
+						<form action="POST">
+							<div class="form-group">
+								<div class="form-title">
+									<p>Ma Visite</p>
+								</div>
+								<input
+									type="text"
+									class="form-control"
+									id="surname"
+									placeholder="Nom"
+								/>
+								<input
+									type="text"
+									class="form-control"
+									id="name"
+									placeholder="Prénom"
+								/>
+								<input
+									type="text"
+									class="form-control"
+									id="date"
+									placeholder="Date"
+								/>
+								<div class="button">
+									<button type="submit" class="btn">
+										Je réserve ma visite
+									</button>
+								</div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-12 col-md-6">
+						<div class="map-element row m-0">
+							<div class="col-12 col-md-5">
+								<div>
+									<p class="font-weight-bold">Durée:</p>
+									<p>2h</p>
+								</div>
+								<div>
+									<p class="font-weight-bold">Type:</p>
+									<p>Visite guidée</p>
+								</div>
+								<div>
+									<p class="font-weight-bold">Prix:</p>
+									<p>12.00€ <span class="font-italic">(adulte)</span></p>
+									<p>
+										7.00€
+										<span class="font-italic">(8 à 16 ans et étudiants)</span>
+									</p>
+								</div>
+							</div>
+
+							<!--The div element for the map -->
+							<div class="col-12 col-md-7">
+								<div style="width: 100%">
+									<iframe
+										scrolling="no"
+										marginheight="0"
+										marginwidth="0"
+										src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Boulevard%20de%20la%20Croix-Rousse,%20Lyon,%20France+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+										width="100%"
+										height="300px"
+										frameborder="0"
+									></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="ad-mobile col-12 col-md-6 d-block d-md-none">
+						<img src="./images/ad_mobile.jpg" alt="ad-mobile" />
+					</div>
+					<div class="ad-desktop col-12 col-md-6 d-none d-md-block">
+						<img src="./images/ad_desktop.jpg" alt="ad-desktop" />
+					</div>
+				</div>
+			</div>
+		</main>
+		<footer>
+			<hr class="mb-3" />
+			<nav class="footer-nav">
+				<ul>
+					<li><a href="#">Contact</a></li>
+					<li><a href="#">Crédits</a></li>
+					<li><a href="#">CGV</a></li>
+					<li><a href="#">Mentions Légales</a></li>
+				</ul>
+			</nav>
+			<p class="text-gold text-center">
+				@ 2015 - Office du Tourisme et des Congrés du Grand Lyon
+			</p>
+		</footer>
+	</body>
+</html>
